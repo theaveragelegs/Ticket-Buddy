@@ -1,215 +1,92 @@
-<link rel="icon" href="Bot_Logo-removebg-preview.png">
 <!DOCTYPE html>
-<html>
+<link rel="icon" href="Bot_Logo-removebg-preview.png">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket Buddy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-        }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-            position: sticky;
-            top: 0;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.2s;
-        }
-        .navbar a:hover {
-            background-color: #555;
-        }
-        .navbar img {
-            float: right;
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            cursor: pointer;
-            transition: opacity 0.2s;
-        }
-        .navbar img:hover {
-            opacity: 0.7;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .header img {
-            width: 100px;
-            height: 100px;
-        }
-        .content {
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-        }
-        .section {
-            margin-bottom: 20px;
-            background-color: #222;
-            padding: 20px;
-            border-radius: 5px;
-            border: 2px solid #fff;
-        }
-        .update {
-            padding: 10px 0;
-        }
-        .coming-soon {
-            text-align: center;
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-        }
-        .get-bot img, .info img {
-            width: 80px;
-            height: 80px;
-            display: block;
-            margin: 0 auto 10px;
-        }
-        .get-bot button {
-            padding: 10px 20px;
-            font-size: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .get-bot button:hover {
-            background-color: #45a049;
-        }
-
-        /* Media query for screens 600px and larger */
-        @media (min-width: 600px) {
-            .content {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-            .section {
-                flex: 1;
-                margin-right: 20px;
-            }
-            .section:last-child {
-                margin-right: 0;
-            }
-        }
-
-        /* Media query for screens 900px and larger */
-        @media (min-width: 900px) {
-            .content {
-                margin: 40px;
-            }
-            .section {
-                margin-right: 40px;
-            }
-            .get-bot button {
-                font-size: 24px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="Page.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="Terms of Service.html">Terms of Service</a>
-        <a href="https://discord.gg/hWax3Pgzvb" target="_blank">
-            <img src="Discord Logo.webp" alt="Discord Logo">
-        </a>
-    </div>
-    <div class="header">
-        <img src="Bot_Logo-removebg-preview.png" alt="Your Bot Logo">
-        <h1>Welcome to Ticket Buddy</h1>
-    </div>
-    <div class="content">
-        <div class="section" id="updates">
-            <h2>Latest Updates</h2>
-            <!-- You can add your updates here -->
-            <div class="update">
-                <h3>Update 1</h3>
-                <p>added /Ticktsystem-setup </p>
-                <p>made bot more stable </p>
-                <p>added /embedsend</p>
-            </div>
-            <div class="update">
-                <h3>Update 2</h3>
-                <p>added /Captcha-setup</p>
-            </div>
-            <!-- End of updates -->
-            <div class="coming-soon">
-                <h3>Coming Soon...</h3>
-                New Games And 
-                /vkick
-                /vmute
-                /vunmute
-                /polls 
-            </div>
-        </div>
-        <div class="section" id="info">
-            <img src="Bot_Logo-removebg-preview.png" alt="Your Bot Logo">
-            <h2>Bot Info</h2>
-            <!-- You can add information about your bot here -->
-            <p>Here are some of the features we offers:</p>
-            <ul>
-                <li>/ban</li>
-                <li>/mute</li>
-                <li>/unmute</li>
-                <li>/warn</li>
-                <li>/warnings</li>
-                <li>/clearwarnings</li>
-                <li>/kick</li>
-                <li>/addrole</li>
-                <li>/removerole</li>
-                <li>/softban</li>
-                <li>/purge</li>
-                <li>/timeout</li>
-                <li>/removetimeout</li>
-                <li>/deafen</li>
-                <li>/undeafen</li>
-                <li>/unban</li>
-                <!-- Add more features as needed -->
+    <header>
+        <nav>
+            <div class="logo">Ticket Buddy</div>
+            <ul class="nav-links">
+                <li><a href="Bot Home Page.html">Home</a></li>
+                <li><a href="Terms of Service.html">Terms of Service</a></li>
             </ul>
-            <p>Here are some of the Special Features</p>
-            <ul>
-                <li>/Ticktsystem-setup</li>
-                <li>/Captcha-setup</li>
-                <li>//Giveaway</li>
-                <li>/Give-money & /Add-money: </li>
-                <li>/Remove-money & /Bank-withdraw:</li>
-                <li>/Daily: Collect daily rewards</li>
-                <li>/Economy-admin & /Economy-</li>
-                <li>/Balance & /Bank-deposit</li>
-                <li>/Fish & /Work</li>
-                <li>/Crime & /Rob</li>
-                <li>/Dicebet & /rock paper scissors</li>
-                <li>/Hangman & /Tictac</li>
-                <li>/Shop & /Shop-buy</li>
-                <li>/Give-item & /Inventory</li>
-                <li>/Scratchcard</li>
-                <li>/Cooldowns</li>
-                <li>/Job-status & /Stats:</li>
-                <li>/embedsend</li>
-                <!-- Add more commands as needed -->
-            </ul>
+            <div class="discord-logo">
+                <a href="https://discord.gg/hWax3Pgzvb" target="_blank">
+                    <img src="Discord Logo.webp" alt="Discord" class="discord-img">
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="container">
+            <img src="Bot_Logo-removebg-preview.png" alt="Ticket Buddy Logo" class="logo-img">
         </div>
-        <div class="section get-bot" id="get-bot">
-            <img src="Bot_Logo-removebg-preview.png" alt="Your Bot Logo">
-            <h2>Get Bot</h2>
-            <p>Click the button below to add our bot to your server.</p>
-            <a href="https://discord.com/oauth2/authorize?client_id=1224343166065311765&permissions=8&integration_type=0&scope=bot" target="_blank">
-                <button>Get Bot</button>
-            </a>
+    </section>
+    <section id="updates" class="updates">
+        <div class="container">
+            <div class="card">
+                <h2>Latest Updates</h2>
+                <p><strong>Update 1</strong><br>added /Ticktsystem-setup<br>made bot more stable<br>added /embedsend</p>
+                <p><strong>Update 2</strong><br>added /Captcha-setup</p>
+                <p><strong>Coming Soon...</strong><br>New Games And /vkick /vmute /unmute /polls</p>
+            </div>
         </div>
-        
+    </section>
+    <section id="info" class="info">
+        <div class="container">
+            <div class="card">
+                <h2>Bot Info</h2>
+                <ul>
+                    <li>/ban</li>
+                    <li>/mute</li>
+                    <li>/unmute</li>
+                    <li>/warn</li>
+                    <li>/warnings</li>
+                    <li>/clearwarnings</li>
+                    <li>/kick</li>
+                    <li>/addrole</li>
+                    <li>/removerole</li>
+                    <li>/softban</li>
+                    <li>/purge</li>
+                    <li>/timeout</li>
+                    <li>/removetimeout</li>
+                    <li>/deafen</li>
+                    <li>/undeafen</li>
+                    <li>/Ticktsystem-setup</li>
+                    <li>/Captcha-setup</li>
+                    <li>/Giveaway</li>
+                    <li>/Give-money & /Add-money</li>
+                    <li>/Remove-money & /Bank-withdraw:</li>
+                    <li>/Daily: Collect daily rewards</li>
+                    <li>/Economy-admin & /Economy</li>
+                    <li>/Balance & /Bank-deposit</li>
+                    <li>/Fish & /Work</li>
+                    <li>/Crime & /Rob</li>
+                    <li>/Dicebet & /rock paper scissors</li>
+                    <li>/Hangman & /Tictac</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="getbot" class="getbot">
+        <div class="container">
+            <div class="card getbot-card">
+                <h2>Get Ticket Buddy Bot</h2>
+                <p>Click the button below to add our bot to your server.</p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1224343166065311765&permissions=8&integration_type=0&scope=bot" class="btn">Get Bot</a>
+            </div>
+        </div>
+    </section>
+    <script src="Page.js"></script>
 </body>
 </html>
-
-
