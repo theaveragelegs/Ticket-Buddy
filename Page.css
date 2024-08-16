@@ -27,6 +27,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    flex-wrap: wrap; /* Allow wrapping for better mobile layout */
 }
 
 .logo {
@@ -43,6 +44,7 @@ nav {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping to fit smaller screens */
 }
 
 .nav-links li a {
@@ -145,13 +147,15 @@ section {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .getbot-card .btn:hover {
     background-color: #45a049;
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries for Enhanced Mobile Responsiveness */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -162,14 +166,17 @@ section {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        text-align: left; /* Align text to the left on mobile */
+        margin-top: 10px;
     }
 
     .logo {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .discord-logo {
-        margin-top: 20px;
+        margin-top: 10px;
+        align-self: flex-start; /* Align Discord logo to the left */
     }
 
     .logo-img {
@@ -177,19 +184,66 @@ section {
     }
 
     .card {
-        margin: 20px 0;
+        margin: 10px 0;
+        padding: 15px;
     }
 
     section {
-        padding: 40px 20px;
+        padding: 40px 10px;
+    }
+
+    .card ul {
+        padding-left: 15px; /* Reduce padding for mobile */
     }
 
     .card ul li {
         font-size: 14px;
     }
 
+    .getbot-card h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .getbot-card p {
+        font-size: 16px;
+        text-align: center;
+    }
+
     .getbot-card .btn {
         padding: 8px 16px;
         font-size: 16px;
+        width: 100%; /* Make button full width on mobile */
+    }
+
+    .logo-img {
+        margin-bottom: 20px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links li a {
+        font-size: 16px; /* Smaller font for very small screens */
+    }
+
+    .getbot-card h2 {
+        font-size: 18px;
+    }
+
+    .getbot-card p {
+        font-size: 14px;
+    }
+
+    .card ul li {
+        font-size: 12px;
+    }
+
+    .logo-img {
+        width: 100px; /* Reduce logo size on very small screens */
+    }
+
+    .discord-logo img {
+        width: 35px;
     }
 }
