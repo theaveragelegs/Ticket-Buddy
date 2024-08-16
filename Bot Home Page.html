@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<link rel="icon" href="Bot_Logo-removebg-preview.png">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket Buddy</title>
+    <link rel="icon" href="Bot_Logo-removebg-preview.png">
     <link rel="stylesheet" href="Page.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Ticket Buddy</div>
+            <div class="logo">
+                <img src="Bot_Logo-removebg-preview.png" alt="Ticket Buddy Logo" class="logo-img">
+            </div>
             <ul class="nav-links">
                 <li><a href="Bot Home Page.html">Home</a></li>
                 <li><a href="Terms of Service.html">Terms of Service</a></li>
@@ -20,64 +22,9 @@
                     <img src="Discord Logo.webp" alt="Discord" class="discord-img">
                 </a>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
     </header>
-    <section id="home" class="home">
-        <div class="container">
-            <img src="Bot_Logo-removebg-preview.png" alt="Ticket Buddy Logo" class="logo-img">
-        </div>
-    </section>
-    <section id="updates" class="updates">
-        <div class="container">
-            <div class="card">
-                <h2>Latest Updates</h2>
-                <p><strong>Update 1</strong><br>added /Ticktsystem-setup<br>made bot more stable<br>added /embedsend</p>
-                <p><strong>Update 2</strong><br>added /Captcha-setup</p>
-                <p><strong>Coming Soon...</strong><br>New Games And /vkick /vmute /unmute /polls</p>
-            </div>
-        </div>
-    </section>
-    <section id="info" class="info">
-        <div class="container">
-            <div class="card">
-                <h2>Bot Info</h2>
-                <ul>
-                    <li>/ban</li>
-                    <li>/mute</li>
-                    <li>/unmute</li>
-                    <li>/warn</li>
-                    <li>/warnings</li>
-                    <li>/clearwarnings</li>
-                    <li>/kick</li>
-                    <li>/addrole</li>
-                    <li>/removerole</li>
-                    <li>/softban</li>
-                    <li>/purge</li>
-                    <li>/timeout</li>
-                    <li>/removetimeout</li>
-                    <li>/deafen</li>
-                    <li>/undeafen</li>
-                    <li>/Ticktsystem-setup</li>
-                    <li>/Captcha-setup</li>
-                    <li>/Giveaway</li>
-                    <li>/Give-money & /Add-money</li>
-                    <li>/Remove-money & /Bank-withdraw:</li>
-                    <li>/Daily: Collect daily rewards</li>
-                    <li>/Economy-admin & /Economy</li>
-                    <li>/Balance & /Bank-deposit</li>
-                    <li>/Fish & /Work</li>
-                    <li>/Crime & /Rob</li>
-                    <li>/Dicebet & /rock paper scissors</li>
-                    <li>/Hangman & /Tictac</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+
     <section id="getbot" class="getbot">
         <div class="container">
             <div class="card getbot-card">
@@ -87,6 +34,86 @@
             </div>
         </div>
     </section>
+
+    <section id="updates" class="updates">
+        <div class="container">
+            <div class="card">
+                <h2>Latest Updates</h2>
+                <div class="update-item">
+                    <h3>Update 1</h3>
+                    <ul>
+                        <li>Added /Ticktsystem-setup</li>
+                        <li>Made bot more stable</li>
+                        <li>Added /embedsend</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h3>Update 2</h3>
+                    <ul>
+                        <li>Added /Captcha-setup</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h3>Update 3</h3>
+                    <ul>
+                        <li>Added /vkick, /vmute, /unmute commands</li>
+                    </ul>
+                </div>
+                <div class="update-item">
+                    <h3>Coming Soon...</h3>
+                    <ul>
+                        <li>New Games and more bot features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="info">
+        <div class="container">
+            <div class="card">
+                <h2>Bot Info</h2>
+                <div class="info-grid">
+                    <ul>
+                        <li>/ban</li>
+                        <li>/mute</li>
+                        <li>/unmute</li>
+                        <li>/warn</li>
+                        <li>/warnings</li>
+                        <li>/clearwarnings</li>
+                        <li>/kick</li>
+                        <li>/addrole</li>
+                        <li>/removerole</li>
+                        <li>/softban</li>
+                        <li>/purge</li>
+                    </ul>
+                    <ul>
+                        <li>/timeout</li>
+                        <li>/removetimeout</li>
+                        <li>/deafen</li>
+                        <li>/undeafen</li>
+                        <li>/Ticktsystem-setup</li>
+                        <li>/Captcha-setup</li>
+                        <li>/Giveaway</li>
+                        <li>/Give-money & /Add-money</li>
+                        <li>/Remove-money & /Bank-withdraw</li>
+                        <li>/Daily: Collect daily rewards</li>
+                    </ul>
+                    <ul>
+                        <li>/Economy-admin & /Economy</li>
+                        <li>/Balance & /Bank-deposit</li>
+                        <li>/Fish & /Work</li>
+                        <li>/Crime & /Rob</li>
+                        <li>/Dicebet & /rock paper scissors</li>
+                        <li>/Hangman & /Tictac</li>
+                        <li>/vkick, /vmute, /unmute</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="Page.js"></script>
 </body>
 </html>
+
